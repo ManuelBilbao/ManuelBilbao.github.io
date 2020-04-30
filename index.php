@@ -2,33 +2,15 @@
 <html lang="es">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-	<title>Estilo ñ</title>
-
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-	<!-- Custom fonts for this template -->
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,700&display=swap" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
-	<link href="css/agency.css?v0.4" rel="stylesheet">
+	<?php require("plantillas/head.php") ?>
+	<link rel="stylesheet" href="css/inicio.css">
 </head>
 
 <body id="page-top">
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 		<div class="container">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">Manuel Bilbao</a>
+			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/Logo-alt.svg" alt="Estilo ñ"></a>
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				Menu
 				<i class="fas fa-bars"></i>
@@ -85,7 +67,7 @@
 						En <strong><em>Estilo ñ</em></strong> lo estaremos acompañando en todo el proceso de esta nueva etapa, desde el minuto cero aconsejándolo para que la transición hacia su nuevo sitio sea el ideal y libre de cualquier duda.
 					</p>
 					<p class="text-muted">
-						Bienvenidos a <strong><em>Estilo ñ</em></strong>, donde el verdadero cambio comienza y los sueños se hacen realidad.
+						Bienvenido a <strong><em>Estilo ñ</em></strong>, donde el verdadero cambio comienza y los sueños se hacen realidad.
 					</p>
 				</div>
 			</div>
@@ -98,57 +80,91 @@
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading text-uppercase">Servicios</h2>
-					<h3 class="section-subheading text-muted">Algunos de los sitios que desarrollamos, no dudes en consultarnos por otras necesidades</h3>
+					<h3 class="section-subheading text-muted">Algunos de los sitios que desarrollamos, no dude en consultarnos por otras necesidades</h3>
 				</div>
 			</div>
 			<div class="row text-center">
-				<div class="col-md-4 mt-2">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">E-Commerce</h4>
-					<p class="text-muted">Plataformas de ventas online con múltiples opciones que se acomodan a cualquier necesidad.</p>
+				<div class="col-11 col-md-6 col-lg-4 mx-auto mt-4">
+					<a href="/ecommerce/" class="text-body text-decoration-none">
+						<div class="servicio">
+							<h4 class="servicio-banner">Más vendido</h4>
+							<div class="servicio-badge">
+								<i class="fab fa-hotjar fa-inverse fa-3x"></i>
+							</div>
+							<!-- <span class="fa-stack fa-4x"> -->
+								<!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+								<i class="fas fa-shopping-cart fa-5x"></i>
+							<!-- </span> -->
+							<h4 class="service-heading">E-Commerce</h4>
+							<p class="text-muted">Plataformas de ventas online con múltiples opciones que se acomodan a cualquier necesidad.</p>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 mt-2">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="fas fa-user-tie fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">Presentación</h4>
-					<p class="text-muted">Sitios de presentación para empresas e independientes que quieren agrandar su negocio.</p>
+				<div class="col-11 col-md-6 col-lg-4 mx-auto mt-4">
+					<a href="#" class="text-body text-decoration-none">
+						<div class="servicio">
+							<!-- <span class="fa-stack fa-4x"> -->
+								<!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+								<i class="fas fa-user-tie fa-5x"></i>
+							<!-- </span> -->
+							<h4 class="service-heading">Presentación</h4>
+							<p class="text-muted">Sitios de presentación para empresas e independientes que quieren agrandar su negocio.</p>
+							<h4 class="servicio-caption">
+								25% OFF
+							</h4>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 mt-2">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="far fa-newspaper fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">Noticias / Blogs</h4>
-					<p class="text-muted">Sitios para noticias o blogs con el mejor y más sencillo editor de texto con un uso simple e intuitivo.</p>
+				<div class="col-11 col-md-6 col-lg-4 mx-auto mt-4">
+					<a href="/blog/" class="text-body text-decoration-none">
+						<div class="servicio">
+							<!-- <span class="fa-stack fa-4x"> -->
+								<!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+								<i class="far fa-newspaper fa-5x"></i>
+							<!-- </span> -->
+							<h4 class="service-heading">Noticias / Blogs</h4>
+							<p class="text-muted">Sitios para noticias o blogs con el mejor y más sencillo editor de texto con un uso simple e intuitivo.</p>
+							<h4 class="servicio-caption">
+								<s>25% OFF</s>&nbsp; 50% OFF
+							</h4>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 mt-2">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="fas fa-book fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">E-Learning</h4>
-					<p class="text-muted">Plataformas de cursos online donde se pueden subir videos y textos.</p>
+				<div class="col-11 col-md-6 col-lg-4 mx-auto mt-4">
+					<a href="/turnos/" class="text-body text-decoration-none">
+						<div class="servicio">
+							<!-- <span class="fa-stack fa-4x"> -->
+								<!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+								<i class="far fa-calendar-check fa-5x"></i>
+							<!-- </span> -->
+							<h4 class="service-heading">Turnos</h4>
+							<p class="text-muted">Sistema de turnos para consultorios, estudios y cualquier empresa que lo requiera.</p>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 mt-2">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="far fa-calendar-check fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">Turnos</h4>
-					<p class="text-muted">Sistema de turnos para consultorios, estudios y cualquier empresa que lo requiera.</p>
+				<div class="col-11 col-md-6 col-lg-4 mx-auto mt-4">
+					<a href="/gestion/" class="text-body text-decoration-none">
+						<div class="servicio">
+							<!-- <span class="fa-stack fa-4x"> -->
+								<!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+								<i class="far fa-building fa-5x"></i>
+							<!-- </span> -->
+							<h4 class="service-heading">Gestión</h4>
+							<p class="text-muted">Sistema de gestión personalizado para satisfacer las necesidades empresariales que se requieran.</p>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-4 mt-2">
-					<span class="fa-stack fa-4x">
-						<i class="fas fa-circle fa-stack-2x text-primary"></i>
-						<i class="far fa-building fa-stack-1x fa-inverse"></i>
-					</span>
-					<h4 class="service-heading">Gestión</h4>
-					<p class="text-muted">Sistema de gestión personalizado para satisfacer las necesidades empresariales que se requieran.</p>
+				<div class="col-11 col-md-6 col-lg-4 mx-auto mt-4">
+					<a href="/elearning/" class="text-body text-decoration-none">
+						<div class="servicio">
+							<!-- <span class="fa-stack fa-4x"> -->
+								<!-- <i class="fas fa-circle fa-stack-2x text-primary"></i> -->
+								<i class="fas fa-book fa-5x"></i>
+							<!-- </span> -->
+							<h4 class="service-heading">E-Learning</h4>
+							<p class="text-muted">Plataformas de cursos online donde se pueden subir videos y textos con opción de suscripciones de pago.</p>
+						</div>
+					</a>
 				</div>
 				<!-- <div class="col-md-4 mt-2">
 					<span class="fa-stack fa-4x">
@@ -187,7 +203,7 @@
 			</div>
 
 			<div class="row text-center">
-				<div class="col-md-4 mt-2">
+				<div class="col-md-6 col-lg-4 mt-2">
 					<span class="fa-stack fa-4x">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
@@ -195,7 +211,7 @@
 					<h4 class="service-heading">Diseño Responsive</h4>
 					<p class="text-muted">Todos los sitios se adaptan a cualquier tamaño y tipo de pantalla. Incluso cuentan con soporte de accesibilidad para personas con discapacidad visual.</p>
 				</div>
-				<div class="col-md-4 mt-2">
+				<div class="col-md-6 col-lg-4 mt-2">
 					<span class="fa-stack fa-4x">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
@@ -203,7 +219,7 @@
 					<h4 class="service-heading">Correos corporativos</h4>
 					<p class="text-muted">Correos electrónicos personalizados para una mejor imagen corporativa. (tunombre@tuempresa.com)</p>
 				</div>
-				<div class="col-md-4 mt-2">
+				<div class="col-md-6 col-lg-4 mt-2">
 					<span class="fa-stack fa-4x">
 						<i class="fas fa-circle fa-stack-2x text-primary"></i>
 						<i class="fas fa-lock fa-stack-1x fa-inverse"></i>
@@ -225,43 +241,49 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a class="portfolio-link" target="_blank" href="https://nohuddle.com.ar/">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fas fa-plus fa-3x"></i>
+				<div class="col-lg-4 col-md-6">
+					<div class="portfolio-item">
+						<a class="portfolio-link" target="_blank" href="https://nohuddle.com.ar/">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
 							</div>
-						</div>
-						<img class="img-fluid" src="img/portfolio/nohuddle.png" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>No Huddle</h4>
+							<img class="img-fluid" src="img/portfolio/nohuddle.png" alt="">
+							<div class="portfolio-caption text-body">
+								<h4>No Huddle</h4>
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a class="portfolio-link" target="_blank" href="portfolio/baran/">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fas fa-plus fa-3x"></i>
+				<div class="col-lg-4 col-md-6">
+					<div class="portfolio-item">
+						<a class="portfolio-link" target="_blank" href="portfolio/baran/">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
 							</div>
-						</div>
-						<img class="img-fluid" src="img/portfolio/baran.png" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>Grupo Baran</h4>
+							<img class="img-fluid" src="img/portfolio/baran.png" alt="">
+							<div class="portfolio-caption text-body">
+								<h4>Grupo Baran</h4>
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 portfolio-item">
-					<a class="portfolio-link" target="_blank" href="https://www.ms-brokers.com.ar/">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<i class="fas fa-plus fa-3x"></i>
+				<div class="col-lg-4 col-md-6">
+					<div class="portfolio-item">
+						<a class="portfolio-link" target="_blank" href="https://www.ms-brokers.com.ar/">
+							<div class="portfolio-hover">
+								<div class="portfolio-hover-content">
+									<i class="fas fa-plus fa-3x"></i>
+								</div>
 							</div>
-						</div>
-						<img class="img-fluid" src="img/portfolio/msbrokers.png" alt="">
-					</a>
-					<div class="portfolio-caption">
-						<h4>MS-Brokers</h4>
+							<img class="img-fluid" src="img/portfolio/msbrokers.png" alt="">
+							<div class="portfolio-caption text-body">
+								<h4>MS-Brokers</h4>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -313,46 +335,13 @@
 		</div>
 	</section>
 
-	<!-- Footer -->
-	<footer class="footer bg-white">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-auto">
-					<span class="copyright">Copyright © Estilo ñ 2020</span>
-				</div>
-				<div class="col-12 col-md-auto ml-md-auto">
-					<ul class="list-inline quicklinks">
-						<li class="list-inline-item mr-5">
-							<!-- <i class="fas fa-phone-alt"></i> -->
-							<i class="fab fa-whatsapp"></i>&nbsp;
-							<a href="tel:+5491134049633" class="text-body">11 3404-9633</a>
-						</li>
-						<li class="list-inline-item">
-							<i class="fas fa-envelope"></i>
-							<a href="mailto:manuel@bilbao.ar" class="text-body">info@estiloñ.com.ar</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php require("plantillas/footer.php") ?>
 
-	<!-- Bootstrap core JavaScript -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-	<!-- Plugin JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-	<!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+	<?php require("plantillas/scripts.php") ?>
 
 	<!-- Contact form JavaScript -->
 	<script src="js/jqBootstrapValidation.js"></script>
 	<script src="js/contact_me.js"></script>
-
-	<!-- Custom scripts for this template -->
-	<script src="js/agency.min.js"></script>
-
 </body>
 
 </html>
